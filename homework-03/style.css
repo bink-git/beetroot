@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #990909;
     max-width: 950px;
+    font-size: 18px;
 }
 ul {
     list-style: none;
@@ -88,4 +89,5 @@ span {
     color: #fff;
     margin-top: 20px;
     padding: 2px;
+    font-size: 20px;
 }
