@@ -35,7 +35,7 @@
     left: 23px;
 }
 .benefit-title {
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-weight: 300;
     font-size: 24px;
     color: #fff;
@@ -43,7 +43,7 @@
     margin-bottom: 28px;
 }
 .benefit-descr {
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
