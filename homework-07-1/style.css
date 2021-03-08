@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span {
+    display: block;
+    margin-top: 145px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #898f99;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.title {
+    margin-bottom: 45px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #0ec8cb;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.descr {
+    width: 625px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    font-family: 'PT Sans';
+    font-weight: normal;
+    line-height: 30px;
+    color: #999;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.item {
+    box-sizing:border-box;
+    width: 230px;
+    min-height: 420px;
+    padding: 56px 28px 85px 28px;
+    background-color: #f7f7f7;
+    border: 1px solid #ececec;
+}
+.item__img-anchor {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    background: url(/icons/Anchor-black.svg) no-repeat;
+}
+.item:hover>.item__img-anchor {
+    background: url(/icons/Anchor-white.svg) no-repeat;
+}
+.item__img-diamond {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    background: url(/icons/Diamond-black.svg) no-repeat;
+}
+.item:hover>.item__img-diamond {
+    background: url(/icons/Diamond-white.svg) no-repeat;
+}
+.item__img-eyeglasses {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    background: url(/icons/Eyeglasses-black.svg) no-repeat;
+}
+.item:hover>.item__img-eyeglasses {
+    background: url(/icons/Eyeglasses-white.svg) no-repeat;
+}
+.item__img-monitor {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    background: url(/icons/Monitor-black.svg) no-repeat;
+}
+.item:hover>.item__img-monitor {
+    background: url(/icons/Monitor-white.svg) no-repeat;
+}
+.item:hover {
+    background-color: #0ec8cb;
+    color: #fff;
+}
+.item:hover>.item__descr {
+    color: #fff;
+}
+.item__title {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 56px;
+}
+.item__descr {
+    margin-top: 34px;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    text-align: center;
+    color: #777777;
+}

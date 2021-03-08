@@ -1,0 +1,113 @@
+*{transition: all .1s ease-in;}
+
+body {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #3399cc;
+    padding: 5px 217px 140px;
+    border: 19px solid #2b81ac;
+}
+.title {
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+ul {
+    margin: 0 auto;
+    width: 980px;
+    background-color: #fff;
+    border: 3px solid #fff;
+    font-size: 0;
+    padding: 0;
+}
+ul:hover li{
+    opacity: 0.5;
+}
+ul:hover li:hover {
+    opacity: 1;
+}
+.city {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.degree {
+    font-size: 26px;
+    color:rgba(255, 255, 255, .7);
+}
+i {
+    font-size: 40px;
+}
+li {
+    box-sizing: border-box;
+    display:inline-block;
+    height: 155px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 26px;
+    border: 3px solid #fff;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+.lisbon {
+    width: 50%;
+    background-color: #3399cc;
+}
+.paris {
+    width:25%;
+    background-color: #33cccc;
+}
+.belgrade {
+    width:25%;
+    background-color: #996699;
+}
+.moscow {
+    width:25%;
+    background-color: #c24747;
+}
+.tel-aviv {
+    width:25%;
+    background-color: #e2674a;
+}
+.cair {
+    width:25%;
+    background-color: #ffcc66;
+}
+.new-york {
+    width:25%;
+    background-color: #99cc99;
+}
+.new-dehli {
+    width:25%;
+    background-color: #669999;
+}
+.san-francisco {
+    width: 50%;
+    background-color: #cc6699;
+}
+.tokyo {
+    width:25%;
+    background-color: #339966;
+}
+.sidney {
+    width: 100%;
+    background-color: #666699;
+}
+.caption {
+    width: 980px;
+    margin: 0 auto;
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
