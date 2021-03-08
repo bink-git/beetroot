@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+body {
+    padding: 20px;
+}
+.header {
+    min-height: 118px;
+    padding: 30px 0 22px 0;
+    background-color: #4a4f56;
+}
+.title {
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    font-size: 36px;
+    color: #eb7e7f;
+}
+.title+span {
+    display: block;
+    font-family: Arial;
+    text-align: center;
+    font-size: 20px;
+    color: #eb7e7f;
+}
+.main {
+    min-height: 640px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #3b3f45;
+}
+.item {
+    margin: 0 auto;
+    padding: 15px;
+    width: 800px;
+    height: 64px;
+    background-color: #88839e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: white;
+    position: relative;
+}
+.item span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #cdcbcb;
+    vertical-align: middle;
+}
+.item:nth-child(even) {
+    background-color: #7a7593;
+}
+.check__label {
+    cursor: pointer;
+}
+.check__label::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #a8a8a8;
+}
+.check__label::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 35px;
+    background: url(icon/check.svg) no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 23px;
+    opacity: 0;
+}
+.item:hover {
+    background-color: #625e77;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+.item:active {
+    background-color: #eb7e7f;
+}
+.check__input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.check__input:checked + .check__label::after {
+    opacity: 1;
+}
+.check__input:checked + .check__label {
+    color: #a3a0b5;
+    text-decoration: line-through;
+}
+.check__input:checked + .check__label span {
+    color: #a3a0b5;
+}
+button {
+    display: block;
+    width: 800px;
+    height: 73px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #4a4f56;
+    font-family: Arial;
+    color: #eb7e7f;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #eb7e7f;
+    color: #fff;
+}
