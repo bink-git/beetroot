@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="author">Roy Batty, 2019</div>
+        <div class="title">Like Tears in Rain</div>
+        <div class="descr">Where am I going? How long have I got?</div>
+        <div>
+            <p>I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhauser gate. All those moments will be lost in time... like tears in rain... <i>Time to die.</i></p>
+
+            <p>I don't know why he saved my life. Maybe in those last moments he loved life more than he ever had before. Not just his life - anybody's life; my life. All he'd wanted were the same answers...</p>
+        </div>
+      
+    </div> 
+    <form action="" class="form" name="title">
+        <legend>title</legend>
+        <label for="title"></label>
+        <input type="text" name="title" id="title" placeholder="Place some text">
+    </form>
+    <div class="yellow"> 
+        <button id="color" class="material-icons"><span class="material-icons-outlined">format_color_text</span></button>
+        <button id="uppercase" class="material-icons"><span class="material-icons-outlined">format_size</span></button>
+        <button>
+            <input class="material-icons" id="file" type="file"></input>
+            <label for="file"><span class="material-icons">insert_photo</span></label>
+        </button>
+        <button id="bold" class="material-icons"><span class="material-icons-outlined">format_bold</span></button>
+        <button id="italic" class="material-icons"><span class="material-icons-outlined">format_italic</span></button>
+        <button id="underline" class="material-icons"><span class="material-icons">format_underlined</span></button>
+        <button id="justify" class="material-icons"><span class="material-icons-outlined">format_align_justify</span></button>
+        <button id="left" class="material-icons"><span class="material-icons-outlined">format_align_left</span></button>
+        <button id="center" class="material-icons"><span class="material-icons-outlined">format_align_center</span></button>
+        <button id="right" class="material-icons"><span class="material-icons-outlined">format_align_right</span></button>
+        <button id="reset" class="material-icons"><span class="material-icons">restart_alt</span></button>
+    </div>
+   
+    <script>
+      $("#color").click(function() {$("p").addClass("color");});
+      $("#uppercase").click(function() {$("p").addClass("uppercase");});
+      $("#bold").click(function() {$("p").addClass("bold");});
+      $("#italic").click(function() {$("p").addClass("italic");});
+      $("#underline").click(function() {$("p").addClass("underline");});
+      $("#justify").click(function() {$("p").addClass("justify");});
+      $("#left").click(function() {$("p").addClass("left");});
+      $("#center").click(function() {$("p").addClass("center");});
+      $("#right").click(function() {$("p").addClass("right");});
+      $("#reset").click(function() {$("p").removeClass("color uppercase bold italic underline justify left center right");});
+    </script>
+</body>
+</html>
