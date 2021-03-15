@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.block {
+    padding: 55px 0 67px;
+}
+.container {
+    width: 865px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.block__item {
+    width: 222px;
+}
+.tablet {
+    background: url(icons/Tablet.svg) center no-repeat;
+}
+.settings {
+    background: url(icons/Settings.svg) center no-repeat;
+
+}
+.dashboard{
+    background: url(icons/Dashboard.svg) center no-repeat;
+}
+.item__img {
+    width: 65px;
+    height: 65px;
+    background-color: #1275b9;
+    text-align: center;
+    padding: 17px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.tablet:hover {
+    background: url(icons/Tablet-blue.svg) center no-repeat;
+    background-color: #fff;
+    border: 1px solid #1275b9;
+}
+.settings:hover {
+    background: url(icons/Settings-blue.svg) center no-repeat;
+    background-color: #fff;
+    border: 1px solid #1275b9;
+}
+.dashboard:hover {
+    background: url(icons/Dashboard-blue.svg) center no-repeat;
+    background-color: #fff;
+    border: 1px solid #1275b9;
+}
+.item__title {
+    font-size: 14px;
+    font-family: "Proxima Nova";
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.item__descr {
+    font-size: 14px;
+    font-family: "Proxima Nova";
+    color: rgb(157, 157, 157);
+    text-align: center;
+}
