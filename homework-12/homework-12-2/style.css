@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    background-color: #e5eeee;
+}
+form  {
+    box-sizing:border-box;
+    width: 400px;
+    height: 496px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background: url(/img/bg.jpg) center no-repeat;
+    padding: 48px 70px 55px;
+    box-shadow: -2px 16px 17px -1px rgba(34, 60, 80, 0.45);
+}
+.tabs a {
+    font-size: 18px;
+    color: #e1c2f1;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 17px;
+}
+
+.tabs a:focus {
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 2px solid #e66a64;
+    text-decoration: none;
+}
+
+.input-username {
+    margin-top: 50px;
+}
+.input-pass {
+    margin-top: 12px;
+}
+.input__info span{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+input {
+    width: 261px;
+    height: 42px;
+    border: 2px solid #bfb9cc;
+    background-color: transparent;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    outline: none;
+}
+input:focus {
+    border: 2px solid #23ae92;
+}
+.label__check {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-top: 20px;
+    margin-left: 22px;
+    position: relative;
+}
+.label__check:hover {
+    cursor: pointer;
+}
+
+.input__check {
+    width: 0;
+    height: 0;
+}
+.input__check::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #23ae92;
+    position: absolute;
+    top: 0;
+    left: -22px;
+    cursor: pointer;
+}
+.input__check:checked::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: url(/img/check.svg);
+    position: absolute;
+    top: 0;
+    left: -22px;
+    z-index: 1;
+    margin: 2px;
+    box-sizing:border-box;
+}
+.input__check:focus::after {
+    width: 16px;
+    height: 16px;
+    outline: 2px solid #e66a64;
+}
+.main__btn {
+    box-sizing: border-box;
+    width: 261px;
+    height: 42px;
+    background-color: #23ae92;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    margin-top: 40px;
+    border: 2px solid #23ae92;
+    
+}
+.main__btn:focus {
+    outline: 2px solid #e66a64;
+}
+.main__btn:hover {
+    background-color: #e66a64;
+}
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31px;
+}
+.footer__links a {
+    font-size: 13px;
+    color: #b9b9cc;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    text-underline-offset: 5px;
+}
+
+.footer__links a:hover {
+    text-underline-offset: 10px;
+    transition: 5s all ease-in; 
+}
+
+.footer__links a:active {
+    color: #e66a64;
+}
