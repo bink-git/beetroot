@@ -1,0 +1,56 @@
+.footer {
+    box-sizing: border-box;
+    max-height: 90px;
+    background-color: #262626;
+    padding: 22px 50px;
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__logo a {
+      font-family: 'Pacifico', cursive;
+      font-size: 25px;
+      color: #b9b9b9;
+      text-align: center;
+      text-decoration: none;
+    }
+    &__copy {
+      font-size: 16px;
+      font-weight: 300;
+      color: #b9b9b9;
+    }
+    &__made-by {
+      font-size: 15px;
+      font-weight: 300;
+      color: #b9b9b9;
+      span {
+        font-size: 15px;
+        font-weight: 700;
+        color: #ff2b58;
+      }
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px 25px;
+      &__content {
+        justify-content: center;
+      }
+      &__logo a {
+        margin: 0 25px;
+        font-size: 18px;
+      }
+      &__copy {
+        font-size: 12px; 
+      }
+      &__made-by {
+        font-size: 12px;
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
