@@ -1,0 +1,175 @@
+.contact {
+    box-sizing: border-box;
+    min-height: 866px;
+    background: url(/img/form_bg.jpg) center (center / cover) no-repeat;
+    padding: 104px 50px 54px;
+    &__title {
+      font-size: 90px;
+      line-height: 68px;
+      font-weight: 700;
+      color: #262626;
+      text-align: center;
+    }
+    &__descr {
+      max-width: 350px;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 43px;
+      font-size: 17px;
+      line-height: 25px;
+      color: #262626;
+      text-align: center;
+    }
+    &__wrap {
+      display: flex;
+      margin: 0 auto;
+    }
+    &__form {
+      margin-right: 170px;
+    }
+    &__input {
+      box-sizing: border-box;
+      display: block;
+      width: 500px;
+      height: 50px;
+      padding: 18px 20px;
+      margin-bottom: 15px;
+      border: none;
+      background-color: rgba(0, 196, 196, 0.5);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    &__textarea {
+      box-sizing: border-box;
+      display: block;
+      width: 500px;
+      height: 250px;
+      padding: 18px 20px;
+      margin-bottom: 15px;
+      border: none;
+      background-color: rgba(0, 196, 196, 0.5);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      resize: none;
+    }
+    &__input::placeholder, &__textarea::placeholder {
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+    }
+    &__input:focus, &__textarea:focus {
+      background: #00c4c4;
+      border-left: 4px solid #355b82;
+      outline: none;
+    }
+    &__input:hover, &__textarea:hover {
+      background: #00c4c4;
+    }
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__list-item {
+      font-size: 20px;
+      color: #262626;
+      font-weight: 300;
+      margin-bottom: 15px;
+      span {
+        display: block;
+        font-size: 17px;
+        color: #262626;
+        font-weight: 700;
+      }
+    }
+    &__form-btn {
+      display: block;
+      width: 100px;
+      height: 50px;
+      padding: 15px 20px;
+      border: none;
+      background-color: #00c4c4;
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      visibility: hidden;
+      &:hover {
+        background-color: #01a3a3;
+        cursor: pointer;
+      }
+    }
+  }
+  
+@media (max-width: 1200px) {
+  .contact {
+    &__form {
+      margin-right: 100px;
+    }
+  }
+} 
+  
+@media (max-width: 1024px) {
+  .contact {
+    &__form {
+      margin-right: 80px;
+    }
+  }
+}
+  
+@media (max-width: 992px) {
+  .contact {
+    &__form {
+      margin-right: 50px;
+    }
+    &__input, &__textarea {
+      width: 400px;
+    }
+  }
+}
+  
+@media (max-width: 768px) {
+    .contact {
+      &__title {
+        font-size: 60px;
+      }
+      &__form {
+        margin-right: 0px;
+      }
+      &__wrap {
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+      }
+      &__input, &__textarea {
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      &__list-item {
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        & span {
+          color: #fff;
+        }
+    }
+  }
+}
+  
+  @media (max-width: 576px) {
+    .contact {
+      padding: 50px 20px 40px;
+      &__input, &__textarea {
+        max-width: 270px;
+        margin-bottom: 10px;
+      }
+      &__textarea {
+        max-height: 150px;
+      }
+    }
+  }
