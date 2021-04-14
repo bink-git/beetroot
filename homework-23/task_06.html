@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Написать конвертор валют. Пользователь вводит количество USD, 
+        // выбирает, в какую валюту хочет перевести EUR, UAN или AZN, 
+        // и получает в ответ соответствующую сумму.
+
+        let usd = prompt('Введіть сумму в USD', '0');
+
+        let curency = prompt('Виберіть валюту: 1 - EUR; 2 - UAH, 3 - AZN', '0');
+        let eur = 1;
+        let uah = 2;
+        let azn = 3;
+
+        switch (+curency) {
+            case 1:
+                alert(+usd * 0.8417);
+                break;
+
+            case 2:
+                alert(+usd * 27.8923);
+                break;
+
+            case 3:
+                alert(+usd * 1.7031);
+                break;
+            };
+
+    </script>
+</body>
+</html>

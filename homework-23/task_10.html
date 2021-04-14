@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let day = +prompt('Введіть день');
+        // let month = +prompt('Введіть місяць');
+        // let year = +prompt('Введіть рік', '1900');
+
+        // if (day === 31) {
+        //     day = 1;
+        // } else {
+        //     day = ++day;
+        // }
+
+        // if (month === 12) {
+        //     month === 1;
+        // } else {
+        //     month = month;
+        // }
+
+        // if (day === 31 && month === 12) {
+        //     day = 1;
+        //     month = 1;
+        //     year = ++year;
+        // }
+
+        // if (day === 29 && month === 2) {
+        //     day == 1;
+        //     month = 3;
+        //     year = year;
+        // }
+
+        // alert('Наступна дата ' + day +  -month + -year);
+
+
+        
+    // Запросить дату (день, месяц, год) и вывести следующую за ней дату.
+    // Учтите возможность перехода на следующий месяц, год, а также високосный год.
+
+    let day = +prompt('Введіть день');
+    let month = +prompt('Введіть місяць');
+    let year = +prompt('Введіть рік', '1900');
+
+        
+        if (month === 12 && day === 31) {
+            day = 1;
+            month = 1;
+            year++;
+        } 
+        
+        
+        if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10) {
+
+            if (day > 0 && day < 31) {
+                day++;
+            } else if (day === 31) {
+                day = 1;
+                month++;
+            } else {
+                alert('Такої дати не існує');
+            }
+        } 
+            
+        
+
+        if (month === 4 || month === 6 || month === 9 || month === 11) {
+
+            if (day > 0 && day < 30) {
+                day++;
+            } else if (day === 30) {
+                day = 1;
+                month++;
+            } else {
+                alert('Такої дати не існує');
+            }
+        } 
+        
+        
+        if (month === 2) {
+            if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+
+                if (day > 0 && day < 29) {
+                    day++;
+                } else if (day === 29) {
+                    day = 1;
+                    month++;
+                } 
+            } else {
+
+                if (day > 0 && day < 28) {
+                    day++;
+                } else if (day === 28) {
+                    day = 1;
+                    month++;
+                } 
+            }
+        }
+
+
+        alert('Наступна дата ' + day +  -month + -year);
+        
+    </script>
+</body>
+</html>
