@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // Запросить 2 числа и найти только наибольший общий делитель. 
+    
+    let a = +prompt('Введіть число');
+    let b = +prompt('Введіть число');
+    let div = a > b ? b : a;
+    
+    while (div >= 1) {
+        if (a % div === 0 && b % div === 0) {
+        alert(`Найбільший спільний дільник ${div}`) 
+        }
+        div++;
+        break;
+    }
+
+    </script>
+</body>
+</html>
