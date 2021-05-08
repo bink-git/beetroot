@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Написать функцию, которая считает разницу между датами. Функция принимает 6 параметров, 
+        // которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс». 
+        // При выполнении задания используйте функции из предыдущих 2-х заданий: сначала обе даты 
+        // переведите в секунды, узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс»
+        
+        let h1 = +prompt('Введіть години');
+        let m1 = +prompt('Введіть хвилини');
+        let s1 = +prompt('Введіть секунди');
+        let h2 = +prompt('Введіть години');
+        let m2 = +prompt('Введіть хвилини');
+        let s2 = +prompt('Введіть секунди');
+
+        function getSeconds(h1, m1, s1, h2, m2, s2) {
+            let time1 = ((h1 * 3600) + (m1 * 60) + s1);
+            let time2 = ((h2 * 3600) + (m2 * 60) + s2);
+            let timeResult = time1 - time2;
+            return timeResult;
+        }
+
+        let seconds = getSeconds(h1, m1, s1, h2, m2, s2);
+
+        function getTime(seconds) {
+            let h = Math.floor(seconds / 3600);
+            let m = Math.floor((seconds - (h * 3600)) / 60);
+            let s = Math.floor(seconds - ((h * 3600) + (m * 60)));
+
+            let hh = `${h}`.padStart(2, '0')
+            let mm = `${m}`.padStart(2, '0')
+            let ss = `${s}`.padStart(2, '0')
+
+            return (`${hh} : ${mm} : ${ss}`);
+        }
+
+        alert(getTime(seconds));
+       
+    </script>
+</body>
+</html>
