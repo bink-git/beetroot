@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Вывести таблицу умножения для всех чисел от 2 до 9. 
+        // Каждое число необходимо умножить на числа от 1 до 10.   
+         
+        let table = '';
+
+        for (let i = 2; i < 10; i++) {
+            table += i + ' x 2 = ' + (i * 2) + '<br>';
+        }
+        for (let i = 2; i < 10; i++) {
+            table += i + ' x 3 = ' + (i * 3) + '<br>';
+        }
+        for (let i = 2; i < 10; i++) {
+            table += i + ' x 4 = ' + (i * 4) + '<br>';
+        }
+        document.write(table);
+
+    </script>
+</body>
+</html>
