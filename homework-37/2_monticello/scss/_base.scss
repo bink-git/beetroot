@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Gotham";
+    src: local("/fonts/GothamBold/gothambold1.woff") format("woff"),
+        local("/fonts/GothamBook/GothamBook.woff") format("woff");
+   }
+
+   
+
+$primary-color: #55b7ff;
+$secondary-color :#7e5aff;
+$text-color: #2c4058;
+$fontGotham: 'Gotham', sans-serif;
+$fontOpenSans: 'Open Sans', sans-serif;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+          
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
