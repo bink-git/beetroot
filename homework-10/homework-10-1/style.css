@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+}
+body {
+    padding: 81px 0 115px;
+    box-sizing: border-box;
+    background-color: #b07cf7;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.title {
+    margin-bottom: 23px;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.descr {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    color: #fff; 
+}
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    position: relative;
+    cursor: pointer;
+}
+.card:hover {
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+.card__img {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.card__date {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.card__date span {
+    color:#fff;
+    font-weight: 900;
+    font-size: 21px;
+    position: absolute;
+    top: 33px;
+    left: 7px;
+}
+.card__title {
+    font-size: 20px;
+    font-weight: 700;
+    color:#fff;
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+}
+.card__author {
+    font-size: 13px;
+    font-weight: 300;
+    color:#fff;
+    position: absolute;
+    left: 20px;
+    bottom: 27px;
+}
+button {
+    display: block;
+    width: 200px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 46px;
+    background-color: #f72b3b;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    border: none; 
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды 
+        // и возвращает в виде строки «чч:мм:сс».   
+         
+        let seconds = +prompt('Введіть секунди');
+
+        function getTime(seconds) {
+            let h = Math.floor(seconds / 3600);
+            let m = Math.floor((seconds - (h * 3600)) / 60);
+            let s = Math.floor(seconds - ((h * 3600) + (m * 60)));
+
+            let hh = `${h}`.padStart(2, '0')
+            let mm = `${m}`.padStart(2, '0')
+            let ss = `${s}`.padStart(2, '0')
+
+            return (`${hh} : ${mm} : ${ss}`);
+        }
+
+        alert(getTime(seconds));
+
+    </script>
+</body>
+</html>

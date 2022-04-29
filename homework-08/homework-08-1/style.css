@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fdde7e;
+    padding-top: 50px;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    box-sizing: border-box;
+    width: 360px;
+    height: 441px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px;
+    padding: 36px 0 38px;
+}
+.card-gold {
+    box-sizing: border-box;
+    width: 360px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px;
+    padding: 38px 0 38px;
+}
+.price-gold {
+    font-family: 'Miso', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #02995b;
+    text-align: center;
+}
+.cup__img-gold {
+    text-align: center;
+    margin-top: 31px;
+}
+.title-gold {
+    font-family: 'Miso', sans-serif;
+    font-size: 56px;
+    font-weight: light;
+    text-align: center;
+    margin-top: 31px;
+}
+.descr-gold {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 18px;
+    color: #333333;
+}
+.price {
+    font-family: 'Miso', sans-serif;
+    font-size: 70px;
+    line-height: 65px;
+    font-weight: bold;
+    color: #02995b;
+    text-align: center;
+}
+.cup__img {
+    text-align: center;
+    margin-top: 17px;
+}
+.title {
+    font-family: 'Miso', sans-serif;
+    font-size: 56px;
+    line-height: 40px;
+    font-weight: light;
+    text-align: center;
+    margin-top: 32px;
+}
+.descr {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 28px;
+    color: #333333;
+}

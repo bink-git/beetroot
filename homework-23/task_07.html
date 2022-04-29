@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: 
+        // от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%.
+
+        let price = +prompt('Введіть суму');
+
+        if (price >= 200 && price <= 300) {
+            let percent = price - (price * 3 / 100);
+            alert(`Ваша ціна зі знижкою ${percent}`);
+        }
+
+        if (price >= 300 && price <= 500) {
+            let percent = price - (price * 5 / 100);
+            alert(`Ваша ціна зі знижкою ${percent}`);
+        }
+
+        if (price > 500) {
+            let percent = price - (price * 7 / 100);
+            alert(`Ваша ціна зі знижкою ${percent}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // Написать функцию, которая принимает время (часы, минуты, секунды) 
+    // и выводит его на экран в формате «чч:мм:сс».
+    // Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
+       
+    let h = +prompt('Введіть години');
+    let m = +prompt('Введіть хвилини');
+    let s = +prompt('Введіть секунди');
+
+    function getTime(h, m, s) {
+        if (!m) m = '00';
+        if (!s) s = '00';
+        
+        return (`${h} : ${m} : ${s}`);
+    }
+
+    alert(getTime(h, m, s));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
+
+        let poli = prompt('Введіть пятирозрядне число');
+
+        poli = ( poli[0] + poli[1] + poli[2] + poli[3] + poli[4] );
+
+        if (poli[0] == poli[4] && poli[1] == poli[3]) {
+            alert('Паліндром');
+        } else {
+            alert('НЕ паліндромом');
+        }
+
+    </script>
+</body>
+</html>

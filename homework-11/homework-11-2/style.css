@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.background {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background: url(/img/bg.jpg) no-repeat;
+    padding-top: 110px;
+}
+.shoe-card {
+    width: 690px;
+    height: 390px;
+    background-color: #111a28;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 22px 30px;
+    position: relative;
+}
+.shoe-card__logo img{
+    display: block;
+    width: 65px;
+}
+.shoe__wrapper {
+    position: relative;
+}
+.shoe-card__img {
+    margin-left: 15px;
+    position: absolute;
+    top: 70px;
+}
+
+/* buttons */
+.buttons {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.button:hover {
+    transform: scaleY(1.7) scaleX(1.2);
+    border: 2px solid #7b8088;
+    outline: none;
+    cursor: pointer;
+}
+.button-black {
+    background-color: #1f273f;
+}
+.button-white {
+    background-color: #fff;
+}
+.button-red {
+    background-color: #ed3333;
+}
+.button-aqua {
+    background-color: #29e3ea;
+}
+/* buttons */
+
+.shoe-info {
+    width:200px;
+    position: absolute;
+    right: 9px;
+    top: 18px;
+}
+.shoe-info__title {
+    color: #e1e1e1;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.shoe-info__descr {
+    color: #8d9094;
+    font-size: 13px;
+}
+
+/* rating */
+.rating {   
+    position: absolute;
+    top: 102px;
+    right: 129px;
+}
+.rating label {
+    float: right;
+    cursor: pointer;
+}
+.rating label:not(:first-of-type) {
+    padding-right: 1px;
+}
+.rating label:before {
+    content: "\2605";
+    font-size: 16px;
+    color: #9da1a6;
+}
+.rating input {
+    display: none;
+}
+.rating input:checked ~ label:before, 
+.rating:not(:checked) > label:hover:before, 
+.rating:not(:checked) > label:hover ~ label:before {
+    color: #f7bf16;
+}
+/* rating */
+
+select {
+    margin-top: 46px;
+    padding: 5px;
+    width: 70px;
+    height: 32px;
+    background-color: transparent;
+    color: #8d9094;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 10px;
+    border: 1px solid rgba(255,255,255,0.26)
+}
+select:hover {
+    cursor: pointer;
+    background-color: rgba(76,82,90,0.8);
+}
+option {
+    background-color: #fff;
+    color: #000;
+}
+.shoe-info__btn {
+    margin-top: 30px;
+    width: 184px;
+    height: 40px;
+    background-color: rgba(76,82,90,0.26);
+    color: #e1e1e1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.26)
+}
+.shoe-info__btn:hover {
+    cursor: pointer;
+    background-color: rgba(76,82,90,0.8);
+}

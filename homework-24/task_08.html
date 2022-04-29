@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    // Зациклить вывод дней недели таким образом: «День недели. 
+    // Хотите увидеть следующий день?» и так до тех пор, пока пользователь нажимает OK.    
+        
+    const week = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
+    let day = 0;
+
+    while (confirm(`${week[day]}. Хочете побачити наступний день?`)) {
+        
+        if (day === 6) {
+            day = 0;
+        } else {
+            day++;
+        }
+    }
+    
+    </script>
+</body>
+</html>

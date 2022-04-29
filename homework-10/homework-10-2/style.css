@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 100px 0 115px;
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.title {
+    margin-bottom: 47px;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.divider {
+    margin: 0 auto;
+    width: 45px;
+    height: 4px;
+    background-color: #dddbdb;
+    position: relative;
+    top: -35px;
+}
+.descr {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    color: #3c3c3c; 
+}
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 268px;
+    height: 268px;
+    position: relative;
+    background-color: #18b5dc;
+    z-index: 1;
+}
+.social {    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.card:hover .card__img {
+    display:none;
+}
+.link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255,255,255,0.3);
+    margin: 0 2px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+.link a:hover {
+    transform: scale(1.1);
+}
+.card__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #282528;
+    margin-top: 13px;
+}
+.card__position {
+    font-size: 14px;
+    font-weight: 300;
+    color: #646464;
+}

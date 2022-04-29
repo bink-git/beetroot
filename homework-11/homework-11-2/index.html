@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+    <div class="shoe-card">
+            <div class="shoe-card__logo">
+                <img src="/img/logo.png" alt="logo">
+            </div>
+            
+        <div class="shoe__wrapper">
+            <div class="shoe-card__img">
+                <img id="myImage" src="/img/Nike-SB-black.png" alt="">
+                
+                <div class="buttons">
+                    <button class="button button-black" onclick="document.getElementById('myImage').src='/img/Nike-SB-black.png'"></button>
+                    <button class="button button-white" onclick="document.getElementById('myImage').src='/img/Nike-SB-white.png'"></button>
+                    <button class="button button-red" onclick="document.getElementById('myImage').src='/img/Nike-SB-red.png'"></button>
+                    <button class="button button-aqua" onclick="document.getElementById('myImage').src='/img/Nike-SB-aqua.png'"></button>
+                </div>
+            </div>
+
+            <div class="shoe-info">
+                <div class="shoe-info__title">Nike SB Stefan Janoski Max</div>
+                <div class="shoe-info__descr">Unisex Skateboarding Shoe (Men's Sizing)</div>
+
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1"></label>
+                </div>
+
+                <form action="">
+                    <select name="Size" class="shoe-info__size">
+                       <option value="size">Size</option>
+                       <option value="40">40</option>
+                       <option value="41">41</option>
+                       <option value="42">42</option>
+                       <option value="43">43</option>
+                       <option value="44">44</option>
+                    </select>
+                    <select class="shoe-info__qty">
+                       <option value="qty">Qty</option>
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                    </select>
+                </form>
+                
+                <button class="shoe-info__btn">Add to cart</button>
+            </div>
+        </div>
+    </div>    
+</div>
+    
+</body>
+</html>

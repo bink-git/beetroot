@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// Игра «Угадай число». Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: 
+// каждую итерацию цикла делите диапазон чисел пополам, записываете результат в N и спрашиваете у пользователя «Ваше число > N, 
+// < N или == N?». В зависимости от того, что указал пользователь, уменьшаете диапазон. 
+// Начальный диапазон от 0 до 100, поделили пополам и получили 50. 
+// Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. 
+// И так до тех пор, пока пользователь не выберет == N.
+        
+    if (confirm('Загадайте число від 0 до 100')) {
+        
+        let min = 0;
+        let max = 100;
+        let result = 50;
+        let buffer;
+
+        while (true) {
+            if (confirm(`Ваше число ${result}?`)) {
+                alert('Вгадали!');
+                break;
+
+            } else if (confirm(`Ваше число більше ніж ${result}?`)) {
+                buffer = Math.floor((max - result) / 2);
+                min = result;
+                result = result + buffer;
+                continue;
+
+            } else if (confirm(`Ваше число менше ніж ${result}?`)) {
+                buffer = Math.floor((result - min) / 2);
+                max = result;
+                result = result - buffer;
+                
+            if (result === 1) {
+                if (confirm(`Ваше число ${result}?`)) {
+                    alert('Вгадали!');
+                    break;
+
+                } else {
+                    result--;
+                }
+            }
+                continue;
+            } else {
+                alert('Щось пішло не так!');
+                break;
+            }
+        }
+    }
+        
+    </script>
+</body>
+</html>

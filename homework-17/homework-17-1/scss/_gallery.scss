@@ -1,0 +1,114 @@
+.gallery {
+  min-height: 1536px;
+  padding: 100px 40px 115px;
+  box-sizing: border-box;
+  background-color: #ffe92f;
+  &__title {
+    // font-size: 90px;
+    font-size: calc(50px + 40 * (100vw / 1500));
+    line-height: 68px;
+    font-weight: 700;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  &__descr {
+    margin: 0 auto;
+    max-width: 575px;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  & img {
+    object-fit: cover;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #5585a2;
+    width: 200px;
+    height: 55px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+  
+  .gallery__images {
+    margin-right: 0;
+    width: 100%;
+  }
+  .img-1 {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .img-2 {
+    margin-bottom: 30px;
+  }
+  .img-4 {
+    float: left;
+    margin-right: 30px;
+  }
+
+@media (max-width: 1300px) {
+    .gallery__images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .gal__img img{
+      margin: 0 10px 20px;
+    }
+  }
+ 
+
+
+@media (max-width: 576px) {
+    .gallery {
+      padding: 80px 30px 80px;
+      // &__title {
+      //   font-size: 60px;
+      // }
+    }
+    // .gal__img img{
+    //   width: 400px;
+    //   height: 280px;
+    //   margin-bottom: 20px;
+    // }
+  }
+
+@media (max-width: 480px) {
+    .gallery {
+      padding: 50px 20px 50px;
+      &__descr {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 35px;
+      }
+      &__btn {
+        margin-top: 30px;
+      }
+    }
+    .gal__img img{
+      margin: 0 10px 20px;
+    }
+  }

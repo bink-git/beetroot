@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. 
+        // За каждый правильный ответ начисляется 2 балла. После вопросов выведите 
+        // пользователю количество набранных баллов.
+
+
+        let capital = +prompt('Яка столиця України?    1 - Київ; 2 - Хаків; 3 - Житомир' );
+
+        let kyiv = 1;
+        let harkiv = 2;
+        let zhytomyr = 3;
+
+        if (capital == 1) {
+            capital = 2;
+            alert('Вірно!');
+        } else {
+            capital = 0;
+            alert('Ні! Столиця України - Київ!');
+        };
+
+        let month = +prompt('Скільки місяців у році?    1 - 10; 2 - 12; 3 - 15' );
+
+        let month1 = 1;
+        let month2 = 2;
+        let month3 = 3;
+
+        if (month == 2) { 
+            month = 2;
+            alert('Вірно!');
+        } else {
+            month = 0;
+            alert('Ні! В році 12 місяців!');
+        };
+
+        let poet = +prompt('Хто написав \"Енеїду"?    1 - Шевченко; 2 - Франко; 3 - Котляревський' );
+
+        let shevchenko = 1;
+        let franko = 2;
+        let kotlyar = 3;
+
+        if (poet == 3) { 
+            poet = 2;
+            alert('Вірно!');
+        } else {
+            poet = 0;
+            alert('Ні! Котляревський!');
+        };
+
+        let result = (+capital + +month + +poet);
+        alert(`Ваш результат ${result}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+
+    let a = +prompt("Введіть початок діапазону","0");
+    let n = +prompt("Введіть кінець діапазону","0");
+    let sum = 0;
+
+    while (a <= n) {       
+        sum = sum + a;  
+        a++;
+    }
+    
+    alert (sum);
+
+    </script>
+</body>
+</html>

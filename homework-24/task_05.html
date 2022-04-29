@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. 
+    //    При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. 
+    //    Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
+   
+    let even = 0;
+    let odd = 0;
+    let positive = 0;
+    let negative = 0;
+    let zero = 0;
+    
+
+    for (let i = 0; i < 10; i++) {
+        let result = +prompt('Введіть число');
+
+        if (result === 0) {
+            zero++;
+        } else if (result > 0) {
+            positive++;
+        } else {
+            negative++;
+        }
+
+        if (result % 2 === 0) {
+            even++;
+        } else {
+            odd++;
+        }
+    };
+
+    alert(`Додатніх чисел - ${positive}, відємних - ${negative}, нулів - ${zero}, парних - ${even}, непарних - ${even}`)
+
+    </script>
+</body>
+</html>
